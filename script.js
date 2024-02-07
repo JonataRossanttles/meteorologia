@@ -11,7 +11,8 @@ const img_tempo = document.getElementById('img-tempo')
 const information_vento = document.getElementById('information_vento')
 const information_chuva = document.getElementById('information_chuva') 
 const information_temp = document.getElementById('information_temp')
-const img_bandeira = document.getElementById('img-bandeira')
+const img_bandeira = document.getElementById('img-bandeira') 
+const container_information_geral = document.getElementById('container_information_geral')
 //Evento
 
 button.addEventListener('click',function(){
@@ -20,6 +21,7 @@ button.addEventListener('click',function(){
     .then(response => response.json())
     .then(dados => {
         console.log(dados)
+        container_information_geral.style.display = 'Block'
         information_tempo.innerHTML = dados.weather[0].description
         information_cidade.innerHTML = dados.name
         information_temp.innerHTML = parseInt(dados.main.temp) + "°C"

@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="style.css">
+
+</head>
+<body>
+
+    <main>
+        <div id="container-geral">
+            <h2 id="titulo">Confira o clima de uma cidade:</h2>
+            <div id="caixa_input">
+                <input type="text" placeholder="Digite o nome da cidade" id="input">
+                <button type="submit" id="botão_enviar"> 
+                    <i class="fa-solid fa-magnifying-glass"></i>             
+                </button>
+            </div>
+        </div>
+        <div id="container_information_geral">
+            <div id="container_information_cidade">
+                <i class="fa-solid fa-location-dot"></i> 
+                <span id="information_cidade">-</span>
+                <img src="https://flagsapi.com/BR/shiny/64.png" alt="" id="img-bandeira">
+            </div>
+            <div id="container_information_temperatura">
+                <span id="information_temp">-°C</span>
+            </div>
+            <div id="container_information_tempo">
+                <span id="information_tempo">-</span>
+                <img src="http://openweathermap.org/img/wn/01d.png" alt="" id="img-tempo">
+            </div>
+            <div id="container_information_chuva_vento">
+                <div id="container_chuva">
+                    <i class="fa-solid fa-droplet"></i>
+                    <span id="information_chuva">-</span>
+                </div>
+                <div id="container_vento">
+                    <i class="fa-solid fa-wind"></i>
+                    <span id="information_vento">-</span>
+                </div>
+                
+            </div>
+            
+
+        </div>
+        
+        
+        
+      
+    </main>
+   <!--<img src="http://openweathermap.org/img/wn/01d.png" alt="">--> 
+    <script src="script.js"></script>
+</body>
+</html>

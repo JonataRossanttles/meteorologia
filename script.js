@@ -13,6 +13,7 @@ const information_chuva = document.getElementById('information_chuva')
 const information_temp = document.getElementById('information_temp')
 const img_bandeira = document.getElementById('img-bandeira') 
 const container_information_geral = document.getElementById('container_information_geral')
+const main = document.getElementsByTagName('main')[0]
 //Evento
 
 button.addEventListener('click',function(){
@@ -24,6 +25,7 @@ button.addEventListener('click',function(){
         container_information_geral.style.display = 'Block'
         information_tempo.innerHTML = dados.weather[0].description
         information_cidade.innerHTML = dados.name
+        main.style.height = '400px'
         information_temp.innerHTML = parseInt(dados.main.temp) + "°C"
         img_bandeira.src = `https://flagsapi.com/${dados.sys.country}/shiny/64.png`
         img_tempo.src = `http://openweathermap.org/img/wn/${dados.weather[0].icon}.png`

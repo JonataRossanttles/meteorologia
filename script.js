@@ -25,14 +25,12 @@ button.addEventListener('click',function(){
     fetch(`https://pixabay.com/api/?key=${api_key_backgroud_photos}&q=${input.value}&lang='pt'&orientation='horizontal'&image_type=photo`)
     .then(response => response.json())
     .then(dados => {
-        console.log(dados)
         document.body.style.backgroundImage = `url('${dados.hits[0].largeImageURL}')`
     })
     
     fetch(`https://api.openweathermap.org/data/2.5/weather?q=${input.value}&appid=${api_key}&units=metric&lang=pt_br`)
     .then(response => response.json())
     .then(dados => {
-        console.log(dados)
         container_information_geral.style.display = 'Block'
         information_tempo.innerHTML = dados.weather[0].description
         information_cidade.innerHTML = dados.name

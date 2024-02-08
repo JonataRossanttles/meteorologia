@@ -11,11 +11,12 @@
 }
 
 body{
-    background-image: url('imagens/pexels-photo-1108234.webp');
+    background-image: url("https://pixabay.com/get/g152d27f98d902b770c0bd8450f3dde6010a0d5b9eaa3d7c9cd9ad22b86c1ccd58495187ff39ed644e040ead16cd3237c8c6a2ce25b32521500a76d4ee92d2d1d_1280.jpg");
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
     height: 100vh;
+    
 }
 
 main{
@@ -26,7 +27,7 @@ main{
     width: 350px;
     
     border-radius: 20px;
-    background: linear-gradient(to bottom,#5C54ED,#5C54ED);
+    background-color: #3a6c9b;
     position: absolute;
     left: 50%;
     top: 50%;
@@ -44,7 +45,7 @@ color: white;
     justify-content: center;
     margin-top: 25px;
     height: 65px;
-    border-bottom: solid 1px white;
+    
 }
 button{
 border-radius: 5px;
